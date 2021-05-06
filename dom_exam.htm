@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>js1 </title>
+		<style>
+			#panel,#flip
+			{
+			padding:5px;
+			text-align:center;
+			background-color:rgb(255,0,128);
+			border:dotted 2px orange;
+			}
+			#panel
+			{
+				display:none;
+				padding:50px;
+			}
+		</style>
+
+		<script>
+			document.ready(function()
+			{
+				$("#flip").click(function()
+				{
+					$("#panel").slidedown("slow");	
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="flip">click here to show panel</div>
+		<div id="panel">this is panel</div>
+	</body>
+</html>
